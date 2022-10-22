@@ -51,6 +51,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/log_head"
                 android:autoLink="web"
+                android:linksClickable="true"
                 android:layout_centerHorizontal="true"
                 android:layout_marginLeft="32dp"
                 android:layout_marginRight="32dp"
