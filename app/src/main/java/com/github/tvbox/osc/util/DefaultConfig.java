@@ -49,7 +49,7 @@ public class DefaultConfig {
             }
         }
         if (withMy)
-            data.add(0, new MovieSort.SortData("my0", "主页"));
+            data.add(0, new MovieSort.SortData("my0", "首页&直播"));
         Collections.sort(data);
         return data;
     }
@@ -131,7 +131,9 @@ public class DefaultConfig {
 //        return false;
 //    }
 
-    private static final Pattern snifferMatch = Pattern.compile("http((?!http).){20,}?\\.(m3u8|mp4|flv|avi|mkv|rm|wmv|mpg)\\?.*|http((?!http).){20,}\\.(m3u8|mp4|flv|avi|mkv|rm|wmv|mpg)|http((?!http).){20,}?/m3u8\\?pt=m3u8.*|http((?!http).)*?default\\.ixigua\\.com/.*|http((?!http).)*?dycdn-tos\\.pstatp[^\\?]*|http.*?/play.{0,3}\\?[^url]{2,8}=.*|http.*?/player/m3u8play\\.php\\?url=.*|http.*?/player/.*?[pP]lay\\.php\\?url=.*|http.*?/playlist/m3u8/\\?vid=.*|http.*?\\.php\\?type=m3u8&.*|http.*?/download.aspx\\?.*|http.*?/api/up_api.php\\?.*|https.*?\\.66yk\\.cn.*|http((?!http).)*?netease\\.com/file/.*");
+    private static final Pattern snifferMatch = Pattern.compile("http((?!http).)*?default\\.365yg\\.com/.*|http((?!http).){20,}?\\.(m3u8|mp4|flv|avi|mkv|rm|wmv|mpg|mov|3gp|asf|rmvb|mpeg|mpe|ts|vob|m4a|mp3|wma)\\?.*|http((?!http).){20,}\\.(m3u8|mp4|flv|avi|mkv|rm|wmv|mpg|mov|3gp|asf|rmvb|mpeg|mpe|ts|vob|m4a|mp3|wma)|http((?!http).){20,}?/m3u8\\?pt=m3u8.*|http((?!http).)*?huoshan\\.com/.*|http((?!http).)*?douyin\\.com/.*|http((?!http).)*?default\\.ixigua\\.com/.*|http((?!http).)*?cdn-tos[^\\?]*|http((?!http).)*?/obj/tos[^\\?]*|http.*?/player/m3u8play\\.php\\?url=.*|http.*?/player/.*?[pP]lay\\.php\\?url=.*|http.*?/playlist/m3u8/\\?vid=.*|http.*?\\.php\\?type=m3u8&.*|http.*?/download.aspx\\?.*|http.*?/api/up_api.php\\?.*|https.*?\\.66yk\\.cn.*|http((?!http).)*?netease\\.com/file/.*");
+    
+    //private static final Pattern snifferMatch = Pattern.compile("http((?!http).){20,}?\\.(m3u8|mp4|flv|avi|mkv|rm|wmv|mpg)\\?.*|http((?!http).){20,}\\.(m3u8|mp4|flv|avi|mkv|rm|wmv|mpg)|http((?!http).){20,}?/m3u8\\?pt=m3u8.*|http((?!http).)*?default\\.ixigua\\.com/.*|http((?!http).)*?dycdn-tos\\.pstatp[^\\?]*|http.*?/play.{0,3}\\?[^url]{2,8}=.*|http.*?/player/m3u8play\\.php\\?url=.*|http.*?/player/.*?[pP]lay\\.php\\?url=.*|http.*?/playlist/m3u8/\\?vid=.*|http.*?\\.php\\?type=m3u8&.*|http.*?/download.aspx\\?.*|http.*?/api/up_api.php\\?.*|https.*?\\.66yk\\.cn.*|http((?!http).)*?netease\\.com/file/.*");
     public static boolean isVideoFormat(String url) {
         if (url.contains("=http") || url.contains(".html")) {
             return false;
