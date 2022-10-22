@@ -7,12 +7,15 @@
     android:orientation="vertical"
     android:padding="@dimen/vs_30">
 
+
     <TextView
         android:layout_width="@dimen/vs_600"
+        android:autoLink="web"
+        android:linksClickable="true"
         android:layout_height="wrap_content"
         android:lineSpacingExtra="@dimen/ts_50"
         android:lineSpacingMultiplier="0"
-        android:text="本软件只提供聚合展示功能，所有资源来自网上, 软件不参与任何制作, 上传, 储存, 下载等内容. 软件仅供学习参考, 请于安装后24小时内删除。\n\n打包分发请保留出处\nhttps://github.com/CatVodTVOfficial/TVBoxOSC"
+        android:text="Dwei提示：本软件为开源项目，只提供聚合展示功能，所有资源均来自网上，软件不参与任何制作、上传、储存、下载等内容，仅供学习交流参考，最后感谢PJ大佬开源，猫大、瓜大、骚大、HL、AJ、长老、影魔、俊老、taka、等大神二次开发。\n为避免不必要的麻烦，请勿将软件对外传播\n版本更新介绍及软件使用教程\n请点击：https://0dlj.cn/software\n软件更新地址请访问：https://0dlj.cn/update\n                        思维没有边界   一切皆有可能"
         android:textColor="@color/color_CC000000"
         android:textSize="@dimen/ts_24" />
 
