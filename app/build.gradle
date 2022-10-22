@@ -4,11 +4,11 @@ android {
     compileSdkVersion 30
 
     defaultConfig {
-        applicationId 'com.github.tvbox.osc'
+        applicationId 'com.github.DweiTV.osc'
         minSdkVersion 16
         targetSdkVersion 26
         versionCode 1
-        versionName '1.0.0'
+        versionName '1.5.7'
         multiDexEnabled true
         //设置room的Schema的位置
         javaCompileOptions {
@@ -101,4 +101,17 @@ dependencies {
     implementation 'com.github.hedzr:android-file-chooser:v1.2.0-final'
     implementation 'commons-io:commons-io:2.11.0'
     implementation 'com.googlecode.juniversalchardet:juniversalchardet:1.0.3'
+}
+
+android.applicationVariants.all {
+    variant ->
+        variant.outputs.all { output ->
+            def date = new Date().format("yyMMdd", TimeZone.getTimeZone("GMT+08"))
+            if (variant.buildType.name == 'debug'){
+                output.outputFileName = "DweiTV_${android.defaultConfig.versionName}.${date}_debug.apk"
+            }else if (variant.buildType.name == 'release'){
+                output.outputFileName = "DweiTV_${android.defaultConfig.versionName}.${date}.apk"
+                println(String.format("UpdateUrl->http://dwei.free.svipss.top/DweiTV/update/%s", URLEncoder.encode(output.outputFileName, "UTF-8")));
+            }
+        }
 }
