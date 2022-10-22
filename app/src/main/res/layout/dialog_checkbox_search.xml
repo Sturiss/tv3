@@ -11,6 +11,7 @@
         android:background="@drawable/shape_dialog_pg_search_checkbox"
         android:orientation="vertical">
 
+
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -35,14 +36,14 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
+                android:layout_marginLeft="@dimen/vs_20"
                 android:background="@drawable/button_dialog_main"
                 android:clickable="true"
                 android:focusable="true"
                 android:padding="@dimen/vs_30"
-                android:text="取消选中"
+                android:text="全不选"
                 android:textColor="@color/color_FFFFFF"
                 android:textSize="@dimen/ts_26" />
-
         </LinearLayout>
 
         <com.owen.tvrecyclerview.widget.TvRecyclerView
