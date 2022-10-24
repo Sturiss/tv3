@@ -197,7 +197,8 @@ public class LivePlayActivity extends BaseActivity {
         context = this;
         epgStringAddress = Hawk.get(HawkConfig.EPG_URL,"");
         if(epgStringAddress == null || epgStringAddress.length()<5)
-            epgStringAddress = "http://epg.51zmt.top:8000/api/diyp/";
+            epgStringAddress = "https://epg.112114.xyz/";
+            //epgStringAddress = "http://epg.51zmt.top:8000/api/diyp/";
 
         setLoadSir(findViewById(R.id.live_root));
         mVideoView = findViewById(R.id.mVideoView);
@@ -465,9 +466,9 @@ public class LivePlayActivity extends BaseActivity {
             findViewById(R.id.ll_epg).setVisibility(View.VISIBLE);
             ((TextView) findViewById(R.id.tv_channel_bar_name)).setText(channel_Name.getChannelName());
             ((TextView) findViewById(R.id.tv_channel_bottom_number)).setText("" + channel_Name.getChannelNum());
-            ((TextView) findViewById(R.id.tv_current_program_time)).setText("暂无信息");
+            ((TextView) findViewById(R.id.tv_current_program_time)).setText("暂无节目信息");
             ((TextView) findViewById(R.id.tv_current_program_name)).setText("");
-            ((TextView) findViewById(R.id.tv_next_program_time)).setText("开源测试软件,请勿商用以及播放违法内容");
+            ((TextView) findViewById(R.id.tv_next_program_time)).setText("DweiTV");
             ((TextView) findViewById(R.id.tv_next_program_name)).setText("");
             String savedEpgKey = channel_Name.getChannelName() + "_" + liveEpgDateAdapter.getItem(liveEpgDateAdapter.getSelectedIndex()).getDatePresented();
             if (hsEpg.containsKey(savedEpgKey)) {
@@ -503,7 +504,7 @@ public class LivePlayActivity extends BaseActivity {
             if (countDownTimer != null) {
                 countDownTimer.cancel();
             }
-            countDownTimer = new CountDownTimer(10000, 1000) {//底部epg隐藏时间设定
+            countDownTimer = new CountDownTimer(8000, 1000) {//底部epg隐藏时间设定
                 public void onTick(long j) {
                 }
 
