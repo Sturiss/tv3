@@ -139,6 +139,7 @@ public class DefaultConfig {
                     "http((?!http).){20,}\\.(m3u8|mp4|flv|avi|mkv|rm|wmv|mpg|mov|3gp|asf|rmvb|mpeg|mpe|ts|vob|m4a|mp3|wma)|" +
                     "http((?!http).){20,}?/m3u8\\?pt=m3u8.*|" +
                     "http((?!http).)*?default\\.ixigua\\.com/.*|" +
+                    "http((?!http).)*?video/tos*|" +            
                     "http((?!http).)*?huoshan\\.com/.*|" +
                     "http((?!http).)*?douyin\\.com/.*|" +
                     "http((?!http).)*?dycdn-tos\\.pstatp[^\\?]*|" +
