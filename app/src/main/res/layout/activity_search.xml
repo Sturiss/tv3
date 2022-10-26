@@ -26,7 +26,6 @@
                 android:background="@drawable/shape_user_focus"
                 android:focusable="true"
                 android:gravity="center"
-                android:visibility="gone"
                 android:text="指定搜索源"
                 android:textColor="@android:color/white"
                 android:textSize="@dimen/ts_20" />
