@@ -257,7 +257,7 @@ public class UpdateDialog extends BaseDialog  {
                 public void onError(Response<File> response) {
                     LOG.i("更新下载失败...");
                     super.onError(response);
-                    showToast("当前网络不可用，请检查网络设置");
+                    showToast("暂无版本更新");
                 }
             });
         } else {
