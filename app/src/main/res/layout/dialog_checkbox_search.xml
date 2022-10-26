@@ -28,7 +28,7 @@
                 android:padding="@dimen/vs_30"
                 android:textColor="@color/color_FFFFFF"
                 android:textSize="@dimen/ts_26"
-                android:text="全选/反选" />
+                android:text="全部选中" />
 
             <TextView
                 android:id="@+id/clearAll"
@@ -40,7 +40,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:padding="@dimen/vs_30"
-                android:text="全不选"
+                android:text="取消选中"
                 android:textColor="@color/color_FFFFFF"
                 android:textSize="@dimen/ts_26" />
         </LinearLayout>
