@@ -676,7 +676,7 @@
 			android:paddingStart="10px"
 			android:paddingTop="15px"
 			android:singleLine="true"
-			android:text="测试频道"
+			android:text="加载中"
 			android:textColor="#FFFCFFFF"
 			android:textSize="30px"
 			android:paddingLeft="10px" />
@@ -752,7 +752,7 @@
 			android:gravity="center"
 			android:marqueeRepeatLimit="marquee_forever"
 			android:singleLine="true"
-			android:text="测试频道"
+			android:text="加载中"
 			android:textColor="#FFFCFFFF"
 			android:textSize="@dimen/vs_30" />
 
