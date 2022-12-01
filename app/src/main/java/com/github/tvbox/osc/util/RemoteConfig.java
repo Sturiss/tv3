@@ -26,9 +26,9 @@ public class RemoteConfig {
 
     public static void Init(Context mContext){
         if (ToolUtils.isApkInDebug(mContext)){
-            remoteUrl = "https://6dlj.cn/config";
+            remoteUrl = "https://0dlj.cn/config";
         }else{
-            remoteUrl = "https://6dlj.cn/config";
+            remoteUrl = "https://0dlj.cn/config";
         }
         LOG.e("RemoteConfig",
                 ToolUtils.isApkInDebug(mContext) ? "当前处于【调试】模式":"当前处于【正式】模式",
